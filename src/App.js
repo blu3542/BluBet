@@ -44,7 +44,7 @@ function App() {
             <div key={index} className="card bg-base-100 w-96 shadow-xl m-4">
               <figure>
                 <img
-                  src= "/BluBet_Stock_Photo.jpg"
+                  src={`${process.env.PUBLIC_URL}/BluBet_Stock_Photo.jpg`} 
                   alt={pick.home_team + " vs " + pick.away_team}
                 />
               </figure>
