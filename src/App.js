@@ -7,7 +7,7 @@ function App() {
   // Function to fetch the picks from the API
   const fetchPicks = async () => {
     try {
-      const response = await fetch('https://blubetbackend.onrender.com', {
+      const response = await fetch('https://blubetbackend.onrender.com/api.picks', {
         method: 'GET', // Setting the HTTP method
         mode: 'cors',  // Ensuring CORS is handled
         headers: {
