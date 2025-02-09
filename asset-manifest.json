@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/BluBet/static/css/main.f855e6bc.css",
-    "main.js": "/BluBet/static/js/main.ab81772c.js",
+    "main.css": "/BluBet/static/css/main.6435d867.css",
+    "main.js": "/BluBet/static/js/main.d7121006.js",
     "static/js/453.ed3810f9.chunk.js": "/BluBet/static/js/453.ed3810f9.chunk.js",
     "index.html": "/BluBet/index.html",
-    "main.f855e6bc.css.map": "/BluBet/static/css/main.f855e6bc.css.map",
-    "main.ab81772c.js.map": "/BluBet/static/js/main.ab81772c.js.map",
+    "main.6435d867.css.map": "/BluBet/static/css/main.6435d867.css.map",
+    "main.d7121006.js.map": "/BluBet/static/js/main.d7121006.js.map",
     "453.ed3810f9.chunk.js.map": "/BluBet/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.ab81772c.js"
+    "static/css/main.6435d867.css",
+    "static/js/main.d7121006.js"
   ]
 }
