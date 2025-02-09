@@ -1,3 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+  @keyframes sheen-move{
+    0%{
+      transform: translateX(-100%);
+    }
+
+    100%{
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes border-spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes border-glow {
+    0% {
+      filter: blur(1.5rem) brightness(1);
+    }
+  
+    50%{
+      filter: blur(5rem) brightness(2);
+    }
+    100%{
+      filter: blur(1.5rem) brightness(1);
+    }
+  }
+
+  .card-wrapper {
+    @apply relative bg-white rounded-2xl;
+    
+  }
+
+  .animate-border-glow{
+    animation: border-glow 2s infinite ease-in-out;
+  }
+
+  .animate-border-spin {
+    animation: border-spin 4s linear infinite;
+  }
+
+  .card-wrapper::before {
+    
+    filter: blur(1.5rem) brightness(1.3);
+    
+    background: conic-gradient(
+      #ff4545, #00ff99, #006aff, #ff0095, #ff4545, transparent 300deg
+    );
+    @apply absolute h-[150%] w-[150%] left-[-25%] top-[-25%] content-[''];
+    animation: border-spin 4s linear infinite, border-glow 2s infinite ease-in-out;
+  }
+
+  .card-content {
+    @apply w-[calc(100%-8px)] h-[calc(100%-8px)] bg-gradient-to-b from-slate-800 to-slate-900 rounded-2xl top-[4px] left-[4px];
+  }
+
+  .card-wrapper::after {
+    
+  }
+
+
+}
+
+/* Non-utility styles */
 .App {
   text-align: center;
 }
@@ -14,7 +84,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +106,5 @@
     transform: rotate(360deg);
   }
 }
+
+
